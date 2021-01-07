@@ -29,13 +29,15 @@ nav {
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     display: block;
     margin-block-start: 1em;
     margin-inline-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -52,6 +54,10 @@ li a {
     padding-right: 5px;
 }
 
+li a:hover {
+    text-decoration: underline;
+}
+
 .dots-app {
     height: 25px;
     width: 25px;
@@ -62,8 +68,22 @@ li a {
    opacity: 0.7; 
 }
 
+.login {
+    background-color: #4285f4;
+    border-radius: 3px;
+    color: white;
+    font-weight: 800;
+    margin-left: 10px;
+    padding: 7px;
+    width: 25px;
+}
+
 .center {
     margin: 0 auto 0 auto;
+}
+
+#logo {
+
 }
 
 #google-logo {
@@ -77,24 +97,33 @@ form {
 
 input {
     height: 40px;
-    width: 500px;
+    width: 80vw;
+    max-width: 484px;
+    padding: 0px 40px;
     border-width: 1pt;
     border-style: solid;
-    border-color: rgba(201,202,2019,0.973);
+    border-color: rgba(201,202,201,0.973);
     border-radius: 50px;
     margin-bottom: 20px;
+    vertical-align: middle;
+}
+
+input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
 }
 
 #mic {
     width: 25px;
-    height: 25px; 
+    height: 25px;  
     display: block;
-    margin: auto;
     transform: translate(900%, -220%);
+    text-align: right;
+    margin: auto auto auto auto;
     border: none;
     background: transparent;
     background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
-    background-repeat: no-repeaat;
+    background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
 }
@@ -104,6 +133,8 @@ input {
     height: 20px;
     display: block;
     transform: translate(100%, -390%);
+    text-align: left;
+    margin: auto auto auto 0px;
     border: none;
     background: transparent;
     background-image: url(https://img.icons8.com/android/24/000000/search.png);
@@ -122,7 +153,15 @@ input {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
     border-radius: 4px;
+}
+
+button {
     border: none;
+}
+
+.search-button:hover {
+    color: black;
+    border: solid rgb(206,206,207) .5px; 
 }
 
 footer {
@@ -136,7 +175,7 @@ footer {
     border-width: .5pt;
     border-style: solid;
     border-color: rgb(236, 235, 235);
-
+    overflow: hidden;
 }
 
 #foot-left{
